@@ -17,7 +17,7 @@ class LinkedList:
             self.end = newNode
             return
 
-        node.prev = self.end
+        newNode.prev = self.end
         self.end.next = newNode
         self.end = newNode
         
@@ -43,3 +43,4 @@ ll.insertAtEnd(3)
 
 ll.displayForward()
 ll.displayBackward()
+
