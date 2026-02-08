@@ -132,7 +132,5 @@ cll.InsertAtEnd(20)
 cll.InsertAtEnd(30)
 cll.InsertAtBegin(5)
 
-cll.Display()
-
 cll.RemoveNodeAtBegin()
 cll.RemoveNodeAtEnd()
