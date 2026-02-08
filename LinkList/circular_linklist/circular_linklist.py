@@ -127,10 +127,36 @@ class CircularLinkedList:
 # Test
 cll = CircularLinkedList()
 
-cll.InsertAtEnd(10)
-cll.InsertAtEnd(20)
-cll.InsertAtEnd(30)
-cll.InsertAtBegin(5)
+print("Size (empty):", cll.SizeOfList())    
+print("Remove begin (empty):", cll.RemoveNodeAtBegin())  
+
+cll.InsertAtBegin(10)
+cll.InsertAtBegin(20)
+cll.InsertAtBegin(30)
+print("Size after InsertAtBegin:", cll.SizeOfList())     
+
+cll.InsertAtEnd(40)
+cll.InsertAtEnd(50)
+print("Size after InsertAtEnd:", cll.SizeOfList())      
+
+cll.InsertAtIndex(25, 2)  
+print("Size after InsertAtIndex:", cll.SizeOfList())  
+
+removed = cll.RemoveNodeAtBegin()
+print("Removed from begin:", removed)        
+print("Size:", cll.SizeOfList())
+
+removed = cll.RemoveNodeAtEnd()
+print("Removed from end:", removed)
+print("Size:", cll.SizeOfList())  
+
+removed = cll.RemoveNodeAtIndex(1)
+print("Removed at index 1:", removed)      
+print("Size:", cll.SizeOfList())            
 
 cll.RemoveNodeAtBegin()
-cll.RemoveNodeAtEnd()
+cll.RemoveNodeAtBegin()
+cll.RemoveNodeAtBegin()
+print("Size after removing all:", cll.SizeOfList())    
+
+print("Remove from empty:", cll.RemoveNodeAtEnd())     
